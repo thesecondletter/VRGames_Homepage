@@ -14,7 +14,7 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background: linear-gradient(90deg, #ffffff, #d3d3d3);
+            background: linear-gradient(90deg, #ffffff, #e0e0e0);
             background-size: 200% 200%;
             animation: moveGradient 5s ease infinite;
         }
@@ -23,11 +23,9 @@
             0% {
                 background-position: 0% 50%;
             }
-
             50% {
                 background-position: 100% 50%;
             }
-
             100% {
                 background-position: 0% 50%;
             }
@@ -57,25 +55,27 @@
             background-color: #fff;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 30%;
+            flex-grow: 1;
             margin: 10px;
             text-align: center;
             padding: 20px;
             transition: transform 0.3s;
+            max-width: 30%;
+            min-width: 250px;
         }
 
-            .category-box.active:hover {
-                transform: scale(1.05);
-            }
+        .category-box.active:hover {
+            transform: scale(1.05);
+        }
 
-            .category-box.inactive {
-                opacity: 0.5;
-                cursor: not-allowed;
-            }
+        .category-box.inactive {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
 
-                .category-box.inactive:hover {
-                    transform: none;
-                }
+        .category-box.inactive:hover {
+            transform: none;
+        }
 
         .emoji {
             font-size: 3rem;
@@ -97,11 +97,7 @@
         footer {
             text-align: center;
             padding: 15px;
-            background-color: #333;
-            color: white;
             width: 100%;
-            position: absolute;
-            bottom: 0;
         }
 
         /* Responsive styles */
@@ -149,7 +145,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>Made with ❤️ by VR Digital Agency</p>
+        <p>B.</p>
     </footer>
 
 </body>
