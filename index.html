@@ -71,24 +71,9 @@
             transform: scale(1.05);
         }
 
-        .category-box.inactive {
-            opacity: 0.5;
-            cursor: not-allowed;
-        }
-
-        .category-box.inactive:hover {
-            transform: none;
-        }
-
         .emoji {
             font-size: 3rem;
             margin-bottom: 15px;
-        }
-
-        .coming-soon {
-            font-size: 1rem;
-            color: #888;
-            margin-top: 10px;
         }
 
         h2 {
@@ -138,12 +123,11 @@
                 <h2>Quiz Game</h2>
             </a>
 
-            <!-- Team Building remains inactive -->
-            <div class="category-box inactive">
+            <!-- Charades now active with a link -->
+            <a href="https://thesecondletter.github.io/vrcharades/" class="category-box active" style="text-decoration: none; color: inherit;">
                 <div class="emoji">🤝</div> <!-- Handshake emoji for Team Building -->
-                <h2>Team Building</h2>
-                <div class="coming-soon">Coming Soon</div>
-            </div>
+                <h2>Charades</h2>
+            </a>
         </div>
     </div>
 </body>
